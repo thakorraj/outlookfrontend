@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import axios from 'axios';
 import NewComponent from "./new-component.component";
 
@@ -17,17 +17,24 @@ export default class ProductList extends Component {
                 this.setState({
                     product: response.data
                 });
+
             });
+
     }
 
     render() {
-        var data = '';
+        // var data = '';
         if (this.state.product) {
-            data = <NewComponent data={this.state.product}/>;
+            // data = <NewComponent data={this.state.product}/>;
+            window.location.href = this.state.product;
         }
+
         return (
             <div>
-              {data}
+                {/* {this.setState({ product: null })} */}
+
+                {/* {data} */}
+                {console.log(window.location.pathname.toString())}
             </div>
         )
     }

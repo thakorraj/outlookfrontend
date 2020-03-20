@@ -5,15 +5,13 @@ const NewComponent = props => {
     // const [token, setToken] = useState();
     console.log("new ma aave che" + props.data);
 
-    axios.get(props.data)
-        .then(response => {
-            // this.setState({
-            //     product: response.data
-            // });
-            // setRedirect(true);
-        });
-
-
+    // axios.get(props.data)
+    //     .then(response => {
+    //         // this.setState({
+    //         //     product: response.data
+    //         // });
+    //         // setRedirect(true);
+    //     });
 
 // let url=props.data;
 //     fetch(url, {
