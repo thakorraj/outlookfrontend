@@ -11,7 +11,7 @@ function App() {
             <Navbar/>
             <br/>
             <Route path="/yes" exact component={ProductList}/>
-            <Route path="/no" exact component={OldComponent}/>
+            <Route path="/no"  component={OldComponent}/>
         </Router>
     );
 }
