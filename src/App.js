@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Route} from "react-router-dom";
 import Navbar from "./components/navbar.component"
 import ProductList from "./components/product-list.component";
 import OldComponent from "./components/old-component.component";
+import OrderComponent from './components/order-list.component';
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <br/>
             <Route path="/yes" exact component={ProductList}/>
             <Route path="/no" component={OldComponent}/>
+            <Route path="/orders" component={OrderComponent}/>
         </Router>
     );
 }
