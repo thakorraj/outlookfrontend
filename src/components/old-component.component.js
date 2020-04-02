@@ -29,6 +29,17 @@ const OldComponent = props => {
   cookies.set('Token', window.location.pathname.toString().substring(4), { path: '/' });
   console.log(cookies.get('Token'));
 
+
+  const Level = props => (
+    <p>
+      {console.log(props.product)}
+       
+    </p>
+  )
+
+
+
+
   let cat = "G304 – Boardroom";
   let link1;
   if (cat === "G306 - Session Room") {
@@ -362,6 +373,7 @@ const OldComponent = props => {
    //   .then(res => setEvent(res.data));
       .then(res =>res.data.value.map((cal) => { 
         console.log(cal);
+        return <Level product={cal} key={cal.id}/>;
       }));
     //  console.log(event.map(()))
     //console.log(res.data)
